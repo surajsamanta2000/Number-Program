@@ -1,0 +1,28 @@
+package com.ss.NumberProgram;
+
+import java.util.Scanner;
+
+public class AmstrongNumber {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter A Number :");
+		int num1=sc.nextInt();
+		
+		int sum=0,num=num1;
+		
+		int len=(""+num1).length();
+		
+		while(num>0) {
+			int rem=num%10;
+			sum=sum+(int)Math.pow(rem,len);
+			num/=10;
+		}
+		
+		if(num1==sum) {
+			System.out.println(num1+" It is an Amstrong Number ");
+		}
+		else System.out.println("Not a Amstrong Number ");
+	}
+
+}

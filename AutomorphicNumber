@@ -1,0 +1,22 @@
+package com.ss.NumberProgram;
+
+import java.util.Scanner;
+
+public class AutomorphicNumber {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter A number :");
+		int num=sc.nextInt();
+		
+		int sqrt=num*num;
+		int len=(""+num).length();
+		
+		int result=(int) (sqrt%Math.pow(10, len));
+		
+		if(num==result)System.out.println("It is an Automorphic number");
+
+	}
+
+}

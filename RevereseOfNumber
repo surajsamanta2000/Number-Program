@@ -1,0 +1,23 @@
+package com.ss.NumberProgram;
+
+import java.util.Scanner;
+
+public class RevereseOfNumber {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Enter A number :");
+		int num=sc.nextInt();
+		int sum=0,n=num;
+		
+		while(n>0) {
+			sum=(sum*10)+(n%10);
+			n/=10;
+		}
+		
+		System.out.println("Reverse Of A Number :"+sum);
+		
+
+	}
+
+}

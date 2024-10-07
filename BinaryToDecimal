@@ -1,0 +1,18 @@
+package com.ss.NumberProgram;
+
+public class BinaryToDecimal {
+
+	public static void main(String[] args) {
+		int num=1011;
+		int sum=0,j=0,n=num;
+		
+		while(n>0) {
+			int rem=n%10;
+			n/=10;
+			sum+=rem*(int)Math.pow(n,j++);
+		}
+		
+		System.out.println(num+" to Decimal -->"+sum);
+	}
+
+}
